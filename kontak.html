@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontak dan formulir pertanyaan untuk pemesanan Icha Kitchen melalui WhatsApp dan Instagram.">
+  <title>Icha Kitchen | Kontak &amp; Pemesanan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Icha Kitchen, beranda"><img src="img/logo-icha.jpg" alt="Logo Icha Kitchen bergambar karakter koki"><span><strong>Icha Kitchen</strong><small>Homemade cake &amp; dessert</small></span></a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu navigasi" aria-controls="menu-utama" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav" aria-label="Navigasi utama"><ul id="menu-utama" class="nav-list"><li><a href="index.html">Beranda</a></li><li><a href="tentang.html">Tentang</a></li><li><a href="katalog.html">Katalog</a></li><li><a href="kontak.html" aria-current="page">Kontak</a></li></ul></nav>
+    </div>
+  </header>
+
+  <main id="konten">
+    <section class="page-hero section-wrap">
+      <p class="eyebrow">HUBUNGI KAMI</p>
+      <h1>Mari bicarakan pesanan Anda.</h1>
+      <p>Silakan tanyakan pilihan produk, ukuran, dekorasi, ketersediaan, dan harga melalui kontak yang tercantum.</p>
+    </section>
+
+    <section class="section-wrap contact-layout section-block">
+      <div class="contact-details">
+        <p class="eyebrow">INFORMASI KONTAK</p>
+        <h2>Terhubung dengan Icha Kitchen</h2>
+        <article class="contact-item"><span class="contact-icon">☎</span><div><h3>WhatsApp / Telepon</h3><p><a href="https://wa.me/6282280342920" target="_blank" rel="noopener noreferrer">0822-8034-2920</a><br><a href="https://wa.me/6282289308338" target="_blank" rel="noopener noreferrer">0822-8930-8338</a></p></div></article>
+        <article class="contact-item"><span class="contact-icon">◎</span><div><h3>Instagram</h3><p><a href="https://www.instagram.com/ichakitchen_01/" target="_blank" rel="noopener noreferrer">@ichakitchen_01</a></p></div></article>
+        <article class="contact-item"><span class="contact-icon">⌖</span><div><h3>Alamat / Area layanan</h3><p>segera</p></div></article>
+        <article class="contact-item"><span class="contact-icon">↗</span><div><h3>Tautan pada bio</h3><p><a href="https://bit.ly/3MpjUAj" target="_blank" rel="noopener noreferrer">bit.ly/3MpJUAj</a></p></div></article>
+      </div>
+
+      <section class="form-panel" aria-labelledby="form-title">
+        <p class="eyebrow">FORMULIR KONTAK</p>
+        <h2 id="form-title">Kirim pertanyaan</h2>
+        <p class="form-intro">Lengkapi data berikut. Setelah lolos validasi, Anda akan mendapat tautan untuk melanjutkan pesan melalui WhatsApp.</p>
+        <form id="contact-form">
+          <div class="field-group"><label for="nama">Nama lengkap <span aria-hidden="true">*</span></label><input id="nama" name="nama" type="text" placeholder="Masukkan nama Anda" required minlength="2" maxlength="60" autocomplete="name"><small class="field-error" id="nama-error"></small></div>
+          <div class="field-group"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" placeholder="nama@email.com" required maxlength="100" autocomplete="email"><small class="field-error" id="email-error"></small></div>
+          <div class="field-group"><label for="telepon">Nomor HP <span aria-hidden="true">*</span></label><input id="telepon" name="telepon" type="tel" placeholder="081234567890" pattern="[0-9]{10,13}" minlength="10" maxlength="13" required inputmode="numeric" autocomplete="tel"><small class="field-hint">Masukkan 10–13 digit angka tanpa spasi atau tanda hubung.</small><small class="field-error" id="telepon-error"></small></div>
+          <div class="field-group"><label for="pilihan">Keperluan <span aria-hidden="true">*</span></label><select id="pilihan" name="pilihan" required><option value="" selected disabled>Pilih keperluan</option><option value="Tanya katalog dan harga">Tanya katalog dan harga</option><option value="Pesan cake custom">Pesan cake custom</option><option value="Pesan dessert atau cookies">Pesan dessert atau cookies</option><option value="Pertanyaan lainnya">Pertanyaan lainnya</option></select><small class="field-error" id="pilihan-error"></small></div>
+          <div class="field-group"><label for="pesan">Pesan <span aria-hidden="true">*</span></label><textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan produk, tanggal kebutuhan, atau pertanyaan Anda..." required minlength="10" maxlength="500"></textarea><small class="field-hint">Minimal 10 dan maksimal 500 karakter.</small><small class="field-error" id="pesan-error"></small></div>
+          <button class="button button-primary submit-button" type="submit">Periksa &amp; lanjutkan <span aria-hidden="true">→</span></button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </section>
+
+    <section class="section-wrap section-block map-section">
+      <div class="section-heading"><div><p class="eyebrow">PETA</p><h2>Cari Icha Kitchen di Google Maps</h2><p class="section-subtitle">Alamat pasti belum terlihat di sumber. Peta berikut adalah pencarian nama usaha, bukan penanda alamat yang sudah terverifikasi.</p></div></div>
+      <div class="map-frame"><iframe title="Pencarian Icha Kitchen pada Google Maps" src="https://www.google.com/maps?q=Icha%20Kitchen&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <p class="small-note">Pastikan lokasi dan area pengantaran langsung kepada pemilik sebelum melakukan pemesanan.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="section-wrap footer-inner"><a class="footer-brand" href="index.html">Icha Kitchen<span>Homemade cake &amp; dessert</span></a><p>© <span class="current-year">2026</span> Icha Kitchen. Informasi produk mengikuti konfirmasi pemilik.</p><a href="https://www.instagram.com/ichakitchen_01/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></footer>
+</body>
+</html>
